@@ -12,8 +12,20 @@ $(function(){
 });
 
 
-var stringArrayOne = ["Welcome to GriffTec Corp Terminal Control", "Please enter valid GriffTec username:", "root", "Please enter password:","**********", "Password accepted! Welcome 'root'.", "Clearing terminal!"] // Intro strings
-var stringArrayTwo = ["temp"]
+var stringArrayOne = [
+	"Welcome to GriffTec Corp Terminal Control", 
+	"Please enter valid GriffTec username:", 
+	"root", 
+	"Please enter password:",
+	"**********", 
+	"Password accepted! Welcome 'root'.", 
+	"Clearing terminal!"
+] // Intro strings
+
+var stringArrayTwo = [
+	"GriffTec Corp Terminal Control", 
+	"Please select you intended action below."
+]
 
 
 
@@ -24,7 +36,7 @@ var fs = {
 
 var cursorHTML = "<span class='cursorCSS'>&nbsp;</span>"
 
-function type(what, where, button, callafter){
+function type(what, where, button, large, center, faster){
 	//Clear Cursor
 	$(".cursorCSS").remove()
 
@@ -37,6 +49,15 @@ function type(what, where, button, callafter){
 	var letter = what.split("")
 
 	function sleepFor () {           //  create a loop function
+		var typeTime;
+
+		if(!faster){
+			typeTime = Math.floor((Math.random() * 100) + 5)
+		}
+		else{
+			typeTime = Math.floor((Math.random() * 25) + 1)
+		}
+
 	   setTimeout(function () {    //  call a 3s setTimeout when the loop is called
 	      $("#"+where+n).append(letter[i])         //  your code here
 	      i++                   //  increment the counter
@@ -46,19 +67,25 @@ function type(what, where, button, callafter){
 	      else{
 	      	$("#"+where+n+"Div").append("<br>")
 	      }                     //  ..  setTimeout()
-	   }, Math.floor((Math.random() * 100) + 5))
+	   }, typeTime  )
 	}
-	if(button == true){
+	if(button){
 		$("#"+where+n).toggleClass("termButton")
+	}
+	if(large){
+		$("#"+where+n).toggleClass("termLarge")
+	}
+	if(center){
+		$("#"+where+n+"Div").toggleClass("termCenter")
 	}
 
 sleepFor();   
 }
 
 
-function timeoutType(what, where, button, when){
+function timeoutType(what, where, button, when, large, center, faster){
 	setTimeout(function(){
-		type(what,where,button)
+		type(what,where,button,large,center,faster)
 	},when)
 }
 
@@ -76,7 +103,9 @@ function intro(){
 
 	setTimeout(function(){
 		clearTerminal();
-	},15000)
+	},15500)
+
+	timeoutType(fs.two[0],"l1",0,19000,1,1,true)
 }
 
 

@@ -47,6 +47,17 @@ body {
 	cursor: pointer;
 }
 
+.termLarge{
+	font-size: 150%;
+	font-weight: 1500;
+}
+
+.termCenter{
+	text-align: center;
+}
+
+
+
 .cursorCSS{
 	-webkit-animation: blink-caret 1.5s step-end infinite;
 }
@@ -56,6 +67,8 @@ body {
   50%  { background-color: rgb(114,226,108)}
   100% { background-color: rgba(57,113,54,0) }
 }
+
+
 
 
 
