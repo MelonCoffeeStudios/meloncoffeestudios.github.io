@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: 'Terminal';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Terminal'), url(fixedsys.tff) format('tff');
+}
+
+body {
+	background: black;
+}
+
+#terminalContainer{
+	background: url(../img/TermBG.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+	left: 9%;
+	top: 4%;
+	width: 82%;
+	height: 84%;
+	position: absolute;
+
+	border: 2px gray solid;
+    border-radius: 25px;
+    box-shadow: 5px 10px 100px rgba(100,100,100,0.3);
+
+}
+
+#terminalTextContainer {
+	margin:30px;
+}
+
+#terminalTextContainer h1, p, span {
+	display: inline;
+	overflow: hidden;
+	font-family: Terminal;
+	color: rgb(114,226,108);
+	padding: 5px;
+}
+
+.termButton:hover {
+	background: rgb(114,226,108);
+	color: rgb(57,113,54);
+	cursor: pointer;
+}
+
+.cursorCSS{
+	-webkit-animation: blink-caret 1.5s step-end infinite;
+}
+
+@-webkit-keyframes blink-caret {
+  0%   { background-color: rgba(57,113,54,0) }
+  50%  { background-color: rgb(114,226,108)}
+  100% { background-color: rgba(57,113,54,0) }
+}
+
+
+
+
+
+
+
+
