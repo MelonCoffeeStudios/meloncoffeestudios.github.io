@@ -1,0 +1,101 @@
+body{
+}
+
+
+
+/*
+MAIN CONTENT
+*/
+#main{
+	width: calc(100% - 10px);
+	height: 100%;
+	background: rgb(130,130,130);
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+#header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: rgb(230,230,230);
+	text-align: center;
+	font-size: 40px;
+	font-weight: 900;
+	border-bottom: 3px solid rgb(250,250,250);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+MENU + SHADOW
+*/
+
+
+#menuCont{
+	width: 350px;
+	height: 100%;
+	background: rgb(200,200,200);
+	position: fixed;
+	z-index: 10000;
+
+	border-right: 10px solid rgb(50,50,50);
+
+	-webkit-transition-duration: 0.5s; /* For Safari 3.1 to 6.0 */
+    transition-duration: 0.5s;
+
+	left: -350px;
+	cursor: pointer;
+
+}
+
+#menuCont:hover {
+	border-right: 30px solid rgb(90,90,90);
+}
+
+.menuContSlide {
+	left: 0px !important;
+}
+
+#shadow {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	background: black;
+	webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	position: fixed;
+	z-index: -1;
+	cursor: pointer;
+
+}
+
+.shadow {
+	opacity: 0.3 !important;
+	z-index: 9999 !important;
+}
+
