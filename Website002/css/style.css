@@ -89,6 +89,7 @@
 }
 
 #social {
+	margin: 10px 0px;
 	float: right;
 }
 
@@ -110,6 +111,11 @@
 
 
 
+
+
+/*
+	Gallery
+*/
 .container {
 	margin:0 auto;
 	overflow:hidden;
