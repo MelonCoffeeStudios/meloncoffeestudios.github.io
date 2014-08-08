@@ -58,9 +58,11 @@
 }
 
 #content {
+	width: 670px;
 	padding: 10px;
 	-webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+    float: left;
 }
 
 .hidden {
@@ -76,9 +78,14 @@
 	border-radius: 0 0 10px 10px;
 	text-align: center;
 	padding-top: 10px;
+	float: left;
 
 }
 
 #nav li.active {
 	background: rgb(130,130,130);
+}
+
+#social {
+	float: right;
 }
