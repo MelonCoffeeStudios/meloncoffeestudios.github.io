@@ -1,6 +1,13 @@
 body{
+	background: url("../img/back.png");
 }
 
+
+
+@font-face {
+    font-family: titleFont;
+    src: url(lakesight.ttf);
+}
 
 
 /*
@@ -9,24 +16,39 @@ MAIN CONTENT
 #main{
 	width: calc(100% - 10px);
 	height: 100%;
-	background: rgb(130,130,130);
+	background: url("../img/back.png");
 	position: absolute;
 	top: 0;
 	left: 10px;
 }
 
 #header{
-	position: absolute;
+	
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 50px;
 	background: rgb(230,230,230);
 	text-align: center;
-	font-size: 40px;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: titleFont;
+	font-size: 45px;
 	font-weight: 900;
 	border-bottom: 3px solid rgb(250,250,250);
 }
+
+#sectionOne {
+	margin: 10px calc(50% - 485px);
+	position: inherit;
+	width: 960px;
+	height: 720px;
+	background: rgb(150,150,150);
+	box-shadow: 0 0 20px black;
+	padding: 10px;
+}
+
+
 
 
 
