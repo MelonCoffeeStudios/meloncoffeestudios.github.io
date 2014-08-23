@@ -48,8 +48,18 @@ MAIN CONTENT
 	padding: 10px;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
 
-
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 60px rgba(50,50,50,0.3); 
+    /*background: rgba(90,90,90,03);*/
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(90,90,90,0.5); 
+}
 
 
 
