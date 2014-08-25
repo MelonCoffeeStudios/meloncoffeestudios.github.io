@@ -7,6 +7,7 @@ body {
 
 #mainCont {
 	width: 960px;
+	min-height: 960px;
 	position: absolute;
 	left: calc(50% - 480px);
 	background: rgb(170,170,170);
@@ -14,28 +15,52 @@ body {
 	margin-top: 10px;
 }
 
+#content {
+	background: white;
+	padding: 10px;
+}
+
 #logo {
 	height: 90px;
 	width: 100%;
 	background: rgb(170,170,170);
-	position: inherit;
 	border-radius: 10px 10px 0px 0px;
 }
+#logo #nav{
+	margin-left: 30px;
+	margin-top: 10px;
+		color: rgb(210,210,210);
+	position: absolute;
+}
+
+#logo #nav a {
+	text-decoration: none;
+	color: rgb(210,210,210);
+}
+
+.active{
+	color: rgb(250,250,250) !important;
+}
+
+
 
 #logo img{
-	height: 80px;
+	height: 160px;
 	margin: 5px;
-	float: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+	float: left;
 }
 
-#logo img:hover {
-	height: 90px;
-	margin: 0px;
+
+#main {
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	padding: 10px;
+	-webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
-#nav ul {
+/*#nav ul {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -62,7 +87,8 @@ body {
 
 #nav a {
     display: block;
-}
+}*/
+
 
 #content {
 	width: 670px;
@@ -78,6 +104,7 @@ body {
 }
 
 #footer {
+	position: absolute;
 	height: 30px;
 	bottom: 0px;
 	background: rgb(200,200,200);
