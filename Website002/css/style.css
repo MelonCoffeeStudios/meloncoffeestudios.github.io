@@ -8,7 +8,7 @@ body {
 
 #mainCont {
 	width: 960px;
-	min-height: 960px;
+	min-height: 600px;
 	position: absolute;
 	left: calc(50% - 480px);
 	background: white;
@@ -28,6 +28,12 @@ body {
 	background: white;
 	border-radius: 10px 10px 0px 0px;
 }
+
+#card {
+	margin-left:700px;
+	float: right;
+}
+
 #logo #nav{
 	margin-left: 30px;
 	margin-top: 10px;
@@ -124,7 +130,8 @@ body {
 }
 
 #social {
-	margin: 10px 0px;
+	margin-top: 10px;
+	margin-right: 10px;
 	float: right;
 }
 
